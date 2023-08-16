@@ -116,3 +116,10 @@ Tele.Equipped:connect(function(Mouse)
 end)
     end,
  })
+
+local Button = ToolsTab:CreateButton({
+    Name = "Btools",
+    Callback = function()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+    end,
+ })
