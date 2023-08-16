@@ -154,6 +154,13 @@ local Button = GuiTab:CreateButton({
     end,
  })
 
+ local Button = GuiTab:CreateButton({
+    Name = "Ice Hub (Brookhaven)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    end,
+ })
+
 local Button = GuiTab:CreateButton({
     Name = "Go to old gui",
     Callback = function()
