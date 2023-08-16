@@ -81,6 +81,13 @@ local Button = FunTab:CreateButton({
     end,
  })
 
+ local Button = FunTab:CreateButton({
+    Name = "Walk on Walls",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
+    end,
+ })
+
 local Button = FunTab:CreateButton({
     Name = "EnableGravity",
     Callback = function()
