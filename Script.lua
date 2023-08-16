@@ -130,3 +130,34 @@ local Button = ToolsTab:CreateButton({
         loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
     end,
  })
+
+local GuiTab = Window:CreateTab("Gui", 4483362458)
+
+local Button = GuiTab:CreateButton({
+    Name = "Dex Explorer",
+    Callback = function()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()
+    end,
+ })
+
+local Button = GuiTab:CreateButton({
+    Name = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Infinite%20Yield.txt"))()
+    end,
+ })
+
+local Button = GuiTab:CreateButton({
+    Name = "c00llgui",
+    Callback = function()
+        loadstring(game:GetObjects("rbxassetid://8127297852")[1].Source)()
+    end,
+ })
+
+local Button = GuiTab:CreateButton({
+    Name = "Go to old gui",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/AYAvTMLp"))()
+        Rayfield:Destroy()
+    end,
+ })
