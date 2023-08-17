@@ -183,6 +183,13 @@ local Button = GuiTab:CreateButton({
  })
 
 local Button = GuiTab:CreateButton({
+    Name = "NexusHub (Prison Life)",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+    end,
+ })
+
+local Button = GuiTab:CreateButton({
     Name = "Go to old gui",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/AYAvTMLp"))()
