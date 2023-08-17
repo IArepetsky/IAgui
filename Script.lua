@@ -169,6 +169,13 @@ local Button = GuiTab:CreateButton({
  })
 
 local Button = GuiTab:CreateButton({
+    Name = "Vynixu's MM2",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/pHZVpMnF'))()
+    end,
+ })
+
+local Button = GuiTab:CreateButton({
     Name = "Go to old gui",
     Callback = function()
         loadstring(game:HttpGet("https://pastebin.com/raw/AYAvTMLp"))()
