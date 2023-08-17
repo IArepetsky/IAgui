@@ -111,6 +111,13 @@ local Button = FunTab:CreateButton({
     end,
  })
 
+local Button = FunTab:CreateButton({
+    Name = "Click Fling",
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+    end,
+ })
+
 local ToolsTab = Window:CreateTab("Tools", 4483362458)
 
 local Button = ToolsTab:CreateButton({
