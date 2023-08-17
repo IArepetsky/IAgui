@@ -104,6 +104,13 @@ local Button = FunTab:CreateButton({
     end,
  })
 
+local Button = FunTab:CreateButton({
+    Name = "Invisible",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/Invisible%20Gui'))()
+    end,
+ })
+
 local ToolsTab = Window:CreateTab("Tools", 4483362458)
 
 local Button = ToolsTab:CreateButton({
