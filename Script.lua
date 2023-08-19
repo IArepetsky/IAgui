@@ -59,6 +59,36 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = PlayerTab:CreateButton({
+    Name = "Noclip",
+    Callback = function()
+        local Noclip = nil
+        local Clip = nil
+
+        function noclip()
+            Clip = false
+            local function Nocl()
+                if Clip == false and game.Players.LocalPlayer.Character ~= nil then
+                    for _,v in pairs(game.Players.LocalPlayer.Character:GetDescendants()) do
+                        if v:IsA('BasePart') and v.CanCollide and v.Name ~= floatName then
+                            v.CanCollide = false
+                        end
+                    end
+                end
+                wait(0.21) -- basic optimization
+            end
+            Noclip = game:GetService('RunService').Stepped:Connect(Nocl)
+        end
+
+        function clip()
+            if Noclip then Noclip:Disconnect() end
+            Clip = true
+        end
+
+        noclip() -- to toggle noclip() and clip()
+    end,
+ })
+
 local FunTab = Window:CreateTab("Fun", 4483362458)
 
 
@@ -168,10 +198,17 @@ local Button = GuiTab:CreateButton({
     end,
  })
 
- local Button = GuiTab:CreateButton({
+local Button = GuiTab:CreateButton({
     Name = "Ice Hub (Brookhaven)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/main/Brookhaven"))()
+    end,
+ })
+
+ local Button = GuiTab:CreateButton({
+    Name = "Sirius",
+    Callback = function()
+        loadstring(game:HttpGet('https://sirius.menu/sirius'))()
     end,
  })
 
