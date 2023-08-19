@@ -89,6 +89,13 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = PlayerTab:CreateButton({
+    Name = "WRD ESP",
+    Callback = function()
+        loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/WRD%20ESP.txt"))()
+    end,
+ })
+
 local FunTab = Window:CreateTab("Fun", 4483362458)
 
 
