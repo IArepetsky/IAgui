@@ -96,6 +96,14 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = PlayerTab:CreateButton({
+    Name = "Fake Lag",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/DylanIsAKingL/Lua-Scripts/main/fake-lag.lua"))()
+    end,
+ })
+
+
 local FunTab = Window:CreateTab("Fun", 4483362458)
 
 
@@ -152,6 +160,13 @@ local Button = FunTab:CreateButton({
     Name = "Click Fling",
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/obf_5wpM7bBcOPspmX7lQ3m75SrYNWqxZ858ai3tJdEAId6jSI05IOUB224FQ0VSAswH.lua.txt'),true))()
+    end,
+ })
+
+local Button = FunTab:CreateButton({
+    Name = "RTX",
+    Callback = function()
+        loadstring(game:HttpGet('https://pastebin.com/raw/Bkf0BJb3'))()
     end,
  })
 
@@ -230,6 +245,13 @@ local Button = GuiTab:CreateButton({
     Name = "NexusHub (Prison Life)",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+    end,
+ })
+
+ local Button = GuiTab:CreateButton({
+    Name = "MysteryHub",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/i4mitty/MysteryHub/main/MysteryHub%20-%20Ragdoll%20Engine.lua"))()
     end,
  })
 
